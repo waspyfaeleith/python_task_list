@@ -5,7 +5,9 @@ from modules.task_list import *
 tasks = [
 ]
 
-#from data.task_list import tasks
+seed_data = input("Do you want to load some tasks (y/n)? ")
+if seed_data.lower() == "y":
+    from data.task_list import tasks
 
 print_menu()
 while (True):
