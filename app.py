@@ -26,7 +26,7 @@ while (True):
         if task != "Task Not Found":
             mark_task_complete(task)
     elif option == '5':
-        duration = get_duration
+        duration = get_duration()
         print_list(get_tasks_taking_longer_than(tasks, duration))
     elif option == '6':
         description = get_task_description()
